@@ -1,0 +1,10 @@
+version: "1"
+rules:
+  # Syncs upstream master to local
+  - base: master 
+    upstream: action-rs:master 
+    mergeMethod: hardreset
+  # Syncs modified master with upstream
+  - base: oxide/master 
+    upstream: master    
+    mergeMethod: hardreset
